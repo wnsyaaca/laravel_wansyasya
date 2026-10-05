@@ -9,3 +9,10 @@ Route::get('/mahasiswa', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+use App\Http\Controllers\HomeController;
+
+Route::get('/home', [HomeController::class, 'index']);
+

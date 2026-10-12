@@ -20,3 +20,8 @@ Route::get('/home', [HomeController::class, 'index']);
 
 Route::post('question/store', [QuestionController::class, 'store'])
 		->name('question.store');
+
+
+        use App\Http\Controllers\DashboardController;
+
+Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
